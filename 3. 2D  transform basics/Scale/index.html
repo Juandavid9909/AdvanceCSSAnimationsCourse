@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scale</title>
+    <style>
+        img {
+            width: 300px;
+            display: block;
+            margin: auto;
+            margin-top: 200px;
+            transition: transform 2s;
+        }
+        
+        img:hover {
+            /* transform: scaleX(.5);
+            transform: scaleY(1.5); */
+            /* transform: scale(.5, 1.5); */
+            transform: scale(.25);
+            /* Usa el mismo argumento para X y Y */
+        }
+    </style>
+</head>
+
+<body>
+    <img src="cat.jpg" alt="">
+</body>
+
+</html>
