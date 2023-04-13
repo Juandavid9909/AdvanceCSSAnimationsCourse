@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+}
+
+div {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    /* None: completa la animación y su origen, forwards: que se quede en la última posición, backwards: inicia en la primera posición que le indicamos en el keyframes, no en la posición original, both utiliza tanto forwards como backwards */
+    animation: moving 5s forwards;
+    animation-delay: 3s;
+}
+
+@keyframes moving {
+    0% {
+        transform: translateX(500px);
+    }
+    50% {
+        transform: translateX(1000px);
+    }
+    100% {
+        transform: translate(1000px, 500px);
+    }
+}
